@@ -1,13 +1,13 @@
 <template>
   <div style="width: 300px; margin: auto; padding-top: 50px;">
     <router-view name="header"></router-view>
-    <transion
+    <transition
       name="fade"
       mode="out-in"
       @before-enter="beforeEnter"
     >
       <router-view></router-view>
-    </transion>
+    </transition>
   </div>
 </template>
 
